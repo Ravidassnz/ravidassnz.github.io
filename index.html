@@ -40,10 +40,33 @@
     </h1>
     <hr width="50%" />
     <br />
-    <h2>Part 2</h2>
-    <p>This is the beginning of my website home page.</p>
-    <img src="img_typo.jpg" alt="Girl with a jacket" />
-    <br />
+    <h2>Demonstrating image changes with screen size</h2>
+    <p>
+      <picture>
+        <source
+          srcset="
+            https://www.istockphoto.com/photo/pumpkin-pie-gm179373356-26898715
+          "
+          media="(max-width: 600px)"
+        />
+        <source
+          srcset="
+            https://www.istockphoto.com/photo/apple-pie-with-one-missing-piece-gm184357185-17538131
+          "
+          media="(max-width: 1500px)"
+        />
+        <source srcset="flowers.jpg" />
+        <img
+          src="https://www.istockphoto.com/photo/apple-pie-with-one-missing-piece-gm184357185-17538131"
+          alt="Flowers"
+          style="width: auto"
+        />
+      </picture>
+
+      <!-- change the image depending on size in html code-->
+      <br />
+    </p>
+
     <h2>Part 3</h2>
     <p>This is the beginning of my website home page.</p>
     <br />
